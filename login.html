@@ -2,16 +2,23 @@
 <html>
     <head>
         <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/menu.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/login.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <h2>Login</h2>
-        <form action="http://vacsina.servegame.com:8000" method="post">
-            <label for="username">Username</label>
-            <input id="username" type="text"  pattern="^[a-zA-Z0-9]+$">
-            <label for="password">Password</label inputmode="latin-name" pattern="^[a-zA-Z0-9]+$">
-            <input id="password" type="password">
-            <input type="submit" value="Entrar">
+        <form action="http://vacsina.servegame.com:8000/user" method="post">
+            <span>
+                <label for="username">Username</label>
+                <input id="username" type="text" pattern="^[a-zA-Z0-9]+$" required>
+            </span>
+            <span>
+                <label for="password">Password</label>
+                <input id="password" type="password" inputmode="latin-name" pattern="^[a-zA-Z0-9]+$" required>
+            </span>
+            <input type="button" value="Entrar" onclick="Login ()">
         </form>
+        <script src="./scripts/login.js"></script>
     </body>
 </html>

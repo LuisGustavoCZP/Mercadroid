@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+span {
+    display: flex;
+    flex-grow: 1;
+}
+
+label {
+    width: 20%;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    
+}
