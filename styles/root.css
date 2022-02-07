@@ -4,13 +4,8 @@ body {
     justify-content: space-between;
     align-items: stretch;
     height: 90vh;
-    
-}
-
-body {
     background-color: var(--color1);
 }
-
 
 header {
     display: flex;

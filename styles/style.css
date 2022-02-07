@@ -13,3 +13,7 @@
     --size0: .4rem;
     --size1: .5rem;
 }
+
+.hidden {
+    display: none;
+}
