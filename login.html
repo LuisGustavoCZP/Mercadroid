@@ -10,12 +10,10 @@
         <h2>Login</h2>
         <form action="http://vacsina.servegame.com:8000/user" method="post">
             <span>
-                <label for="username">Username</label>
-                <input id="username" type="text" pattern="^[a-zA-Z0-9]+$" required>
+                <input id="username" placeholder="Username" type="text" class="custom-input" pattern="^[a-zA-Z0-9]+$" required>
             </span>
             <span>
-                <label for="password">Password</label>
-                <input id="password" type="password" inputmode="latin-name" pattern="^[a-zA-Z0-9]+$" required>
+                <input id="password" placeholder="Password" type="password" class="custom-input" pattern="^[a-zA-Z0-9]+$" required>
             </span>
             <input type="button" value="Entrar" onclick="Login ()">
         </form>

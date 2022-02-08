@@ -26,6 +26,7 @@ function Login ()
     .then(function (data) {
         //console.log('Request succeeded with JSON response', data);
         console.log(data);
+        window.parent.SetUserID(data);
         //CreateCookie(data);
     })
     .catch(function (error) {
@@ -33,8 +34,15 @@ function Login ()
     });
 }
 
-$("#username").on("input", (e) => {username = e.target.value;});
-$("#password").on("input", (e) => {password = e.target.value;});
+$("#username").on("input", (e) => 
+{
+    username = e.target.value;
+    e.target.classList.add("notempty");
+});
+$("#password").on("input", (e) => 
+{
+    password = e.target.value;
+});
 //username = 
 
 //Login ();

@@ -8,15 +8,23 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
 }
 
-span {
+form > span {
     display: flex;
     flex-grow: 1;
+    width: 100%;
+    
+    background-color: var(--color3);
+}
+
+form > span > * {
+    font-size: var(--size1);
 }
 
 label {
+    font-size: .5rem;
     width: 20%;
 }
 
@@ -24,6 +32,7 @@ input {
     width: 100%;
 }
 
-button {
-    
-}
+/* input:not([type="button"]) {
+ 
+} */
+
