@@ -1,5 +1,6 @@
 let username = "";
 let password = "";
+let userID = "";
 
 function CreateCookie (userhash){
     // Cria uma nova data no futuro 01/01/2020
